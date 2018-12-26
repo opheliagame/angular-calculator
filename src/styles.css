@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+	--primary-color: #4286f4;
+	--secondary-color: #41f49d;
+	--light-secondary-color: #68ffb5;
+}
+
+body, html {
+	margin: 0px;
+}

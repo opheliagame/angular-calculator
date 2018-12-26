@@ -1,0 +1,62 @@
+<div class="calculator-container">
+	<div class="display-container">
+		<div class="input-container">
+			<input type="number" name="number1" 
+				[(ngModel)]="number1">
+		</div>
+		<div class="input-container">
+			<input type="number" name="number2"
+				[(ngModel)]="number2">
+		</div>
+		<div class="input-container">
+			<input type="number" name="result"
+				[(ngModel)]="result">
+		</div>
+	</div>
+	<div class="buttons-container">
+		
+		<app-number-button (numberEvent)="receiveNumber($event)" 
+							numberButton=1></app-number-button>
+		<app-number-button (numberEvent)="receiveNumber($event)" 
+							numberButton=2></app-number-button>
+		<app-number-button (numberEvent)="receiveNumber($event)" 
+							numberButton=3></app-number-button>
+
+		<button (click)="reset()">C</button>
+
+		<app-number-button (numberEvent)="receiveNumber($event)" 
+							numberButton=4></app-number-button>
+		<app-number-button (numberEvent)="receiveNumber($event)" 
+							numberButton=5></app-number-button>
+		<app-number-button (numberEvent)="receiveNumber($event)" 
+							numberButton=6></app-number-button>
+
+		<app-operator-button operatorButton="+"
+							(operatorEvent)="receiveOperator($event)"></app-operator-button>
+
+		<app-number-button (numberEvent)="receiveNumber($event)" 
+							numberButton=7></app-number-button>
+		<app-number-button (numberEvent)="receiveNumber($event)" 
+							numberButton=8></app-number-button>
+		<app-number-button (numberEvent)="receiveNumber($event)" 
+							numberButton=9></app-number-button>
+
+		<app-operator-button operatorButton="-"
+							(operatorEvent)="receiveOperator($event)"></app-operator-button>
+
+		<app-number-button (numberEvent)="receiveNumber($event)" 
+							numberButton=0></app-number-button>
+		
+		
+		
+		<app-operator-button operatorButton="*"
+							(operatorEvent)="receiveOperator($event)"></app-operator-button>
+		<app-operator-button operatorButton="/"
+							(operatorEvent)="receiveOperator($event)"></app-operator-button>
+
+
+		<button (click)="calculate()">=</button>
+		
+
+	</div>
+</div>

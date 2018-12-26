@@ -1,0 +1,21 @@
+.main-container {
+	margin: 0px;
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-rows: 1fr 5fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2rem;
+	background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+}
+
+.header-container {
+	grid-column: 1/-1;
+
+}
+
+.calculator-container {
+	grid-row: 2/-1;
+	grid-column: 2/3;
+	margin: 0px 1rem 2rem 1rem;
+}
