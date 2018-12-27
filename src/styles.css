@@ -4,6 +4,7 @@
 	--secondary-color: #41f49d;
 	--light-secondary-color: #68ffb5;
 	box-sizing: border-box;
+	font-family: Helvetica;
 }
 
 body, html {

@@ -28,3 +28,36 @@
 }
 
 }
+
+@media only screen and (min-width: 600px) {
+
+.main-container {
+	display: grid;
+	grid-template-rows: 1fr 5fr;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-gap: 1rem;
+}
+
+.calculator-container {
+	grid-column: 2/-2;
+
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+.main-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+.main-container {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+}

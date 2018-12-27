@@ -6,4 +6,19 @@ button {
 	box-shadow: 2px 2px white;
 	color: black;
 	background-color: var(--light-secondary-color);
+	cursor: pointer;
+	font-size: 2rem;
+	color: white;
+	text-shadow: 2px 2px var(--secondary-color), -2px -2px var(--secondary-color);
+	outline: none;
+}
+
+button:hover {
+	background-color: white;
+	color: var(--secondary-color);
+	text-shadow: 1px 1px var(--primary-color);
+}
+
+button:click, button:focus {
+	outline: none;
 }
